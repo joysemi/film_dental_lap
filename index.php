@@ -245,7 +245,7 @@
                             </div>
 
                             <div class="before_after_info"> 
-                                <span id="caseTitle"><span>< 01 ></span> 지르코니아 세라믹</span>
+                                <span id="caseTitle"><span>&lt; 01 &gt;</span> 지르코니아 세라믹</span>
                                 <div class="btn_before_after">
                                     <div class="slide_counter">
                                         <span id="currentPageNum">1</span> / <span id="totalPageNum">5</span>
