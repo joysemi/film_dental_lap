@@ -263,6 +263,7 @@
         </section>
         <!-- 지도 -->
         <section id="contact">
+            <h2 class="hidden">연락정보영역</h2>
             <div class="map">
                 <img src="/film_dental_lap/mobile/images/map.png" alt="지도, 주소">
             </div>
