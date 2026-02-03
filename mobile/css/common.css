@@ -220,16 +220,20 @@ footer{
 
 /* 반응형 */
 @media (orientation: landscape) {
-    #mobilemenu{
-        width: 70vw; 
+    #mobilemenu {
+        width: 70vw;
         height: 95vh;
-        position: absolute;
-        right: -75vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(110%);
         overflow: hidden;
     }
-    #mobilemenu_inner{
+
+    #mobilemenu_inner {
         height: auto;
     }
+
     footer{
         padding: 4vw 0;
     }
