@@ -1,0 +1,694 @@
+/* 비쥬얼영역시작 */
+section#visual{
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.visual_video{
+    width: 100vw;
+    height: 100%;
+}
+#visualVideo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.visual_txtbox{
+    width: 82.5vw;
+    position: absolute;
+    bottom: 5vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.visual_text{
+    font: 600 3.89vw 'Pretendard'; /* 14px */
+    color: #1E2A78;
+}
+.visual_title{
+    font: 600 8.89vw 'Montserrat'; /* 32px */
+    color: white;
+    letter-spacing: -0.5px;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+.visual_title span{
+    color: #1E2A78;
+}
+/* 비쥬얼영역끝 */
+
+/* 컨텐츠영역시작 */
+/* 기공소 소개 */
+section#about_us{
+    width: 100vw;
+    height: 240px;
+    background-color: #EEEAE2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0px 4.27vw;
+    box-sizing: border-box;
+}
+div.about_us_txtbox{
+    width: 91.11vw;
+    height: 122px;
+}
+.about_us_title{
+    font: 600 20px 'Pretendard'; 
+    margin-bottom: 2.78vw;
+}
+.about_us_text{
+    font: 400 14px 'Pretendard'; 
+    color: #333333;
+    margin-bottom: 6vw;
+}
+button.btn_view_more{
+    width: 110px;
+    height: 34px;
+    background: url('/film_dental_lap/mobile/images/btn_view_more.png') no-repeat center;
+    text-indent: -9999px;
+    border: none;
+    transition: background-image 0.3s ease;
+}
+.btn_view_more:hover{
+    background: url('/film_dental_lap/mobile/images/btn_hover.png') no-repeat center;
+}
+.about_us_img{
+    width: 91.11vw;
+    height: 58.61vw;
+    background: url('/film_dental_lap/mobile/images/about_us_img.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 포트폴리오 */
+section#portfolio{
+    width: 100vw;
+    height: 560px;
+    background-color: #1E2A78;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62vw;
+    padding: 0px 4.27vw;
+    box-sizing: border-box;
+    /* 포지셔닝으로 공간이 남아서 다음섹션이 올라가서 마진이나 패딩 줌 */
+}
+div.portfolio_txtbox{
+    width: 91.11vw;
+    height: 110px;
+    padding: 20px 0px;
+}
+.portfolio_title{
+    font: 600 20px 'Pretendard'; 
+    margin-bottom: 2.78vw;
+    color: #ffffff;
+}
+.portfolio_title span{
+    color: #1B9AEF;
+}
+.portfolio_text{
+    font: 400 14px 'Pretendard'; 
+    color: #ffffff;
+    margin-bottom: 6vw;
+}
+div.portfolio_item_box{
+    width: 91.11vw;
+    height: 320px;
+}
+ul.portfolio_item_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+.portfolio_item{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio_item a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio_item p{
+    font: 400 14px 'Pretendard'; 
+}
+div.portfolio_decotext{
+    width: 100vw;
+    font: 600 10vw 'Montserrat';
+    text-align: center;
+    letter-spacing: -1px;
+    color: rgba(194,196,204,0.1);
+    padding-top: 8vw;
+    box-sizing: border-box;
+}
+
+/* 특별함/결과물 */
+section#results{
+    width: 100vw;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.results_txtbox{
+    width: 91.11vw;
+    height: 100px;
+}
+.results_title{
+    font: 600 20px 'Pretendard'; 
+    margin-bottom: 2.78vw;
+}
+.results_text{
+    font: 400 14px 'Pretendard'; 
+    color: #333333;
+}
+.results_title span{
+    color: #1E2A78;
+}
+div.results_grid_box{
+    width: 91.11vw;
+    height: 470px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+.grid_item{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card_text{
+    font: 400 11px 'Pretendard';
+    margin-bottom: 5vw;
+}
+.card_title{
+    font: 500 14px 'Pretendard';
+}
+.time_card{
+    background: #EAECEF url('/film_dental_lap/mobile/images/time.png') no-repeat 90% 90%;
+}
+.scanedu_card{
+    background: #EAECEF url('/film_dental_lap/mobile/images/scan.png') no-repeat 90% 90%;
+}
+.workflow_card{
+    background: #EEEAE2 url('/film_dental_lap/mobile/images/workflow.png') no-repeat 90% 90%;
+}
+.ability_card{
+    background: #EEEAE2 url('/film_dental_lap/mobile/images/ability.png') no-repeat 90% 90%;
+}
+.grid_item_full{
+  grid-column: 1 / -1;
+  background-color:  #0b2a6d;
+  border-radius: 15px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid_item_full img{
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+.noritake_card_text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.noritake_card_text p{
+    font: 400 14px 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+}
+
+/* 특허증 */
+section#tech_wrap{
+    width: 100vw;
+    height: 88vw;
+    background: url('/film_dental_lap/mobile/images/tech_img.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.tech_txtbox{
+    width: 91.11vw;
+    height: 75px;
+    margin-bottom: 10vw;
+}
+.tech_text{
+    font: 400 10px 'Pretendard';    
+    color: #ffffff;
+    margin-bottom: 2.78vw;
+}
+.tech_title{
+    font: 600 20px 'Pretendard'; 
+    color: #ffffff;
+}
+.tech_title span{ 
+    color: #1BA4FF;
+}
+div.cert_list{
+    width: 91.11vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 18px;
+}
+.cert_item img{
+    width: 100%;
+    height: auto;
+}
+.cert_item p{
+    font: 400 10px 'Pretendard';    
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4vw;
+}
+
+/* 스페셜 임상사례 */
+section#special_case{
+    width: 100vw;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 4.27vw;
+    box-sizing: border-box;
+}
+div.special_case_txtbox{
+    width: 91.11vw;
+    height: 80px;
+}
+.special_case_title{
+    font: 600 20px 'Pretendard'; 
+    margin-bottom: 2.78vw;
+}
+.special_case_title span{
+    color: #1E2A78;
+}
+.special_case_text{
+    font: 400 14px 'Pretendard'; 
+    color: #333333;
+}
+.special_case_swiper{
+    width: 91.11vw;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.special_case_swiper .swiper-slide{
+    width: 100%;
+    min-height: 280px;
+}   
+.special_case_item{
+    width: 235px;
+    height: 280px;
+    background-color: #F3F4F6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.special_case_item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.special_case_item h3{
+    font: 500 16px/24px'Pretendard';    
+    text-align: center;
+}
+.special_case_item p{
+    font: 400 12px/21px 'Pretendard';    
+    color: #333333;
+    letter-spacing: -0.5px;
+    text-align: center;
+    padding-bottom: 2.5vw;
+}
+.special-case-swiper-pagination{
+    width: 100%;
+    height: 100%;               
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+.special-case-swiper-pagination .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    background-color: #D1D5DB;
+    opacity: 1;
+    transition: width 0.3s ease;
+}
+.special-case-swiper-pagination .swiper-pagination-bullet-active{
+    width: 30px;
+    height: 8px;
+    background-color: #1E2A78;
+    border-radius: 4px;
+}
+
+/* 스페셜 임상사례 - 비포에프터 */
+section#before_after_container{
+    width: 100vw;
+    min-height: 380px;
+    background-color: #EEEAE2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 4.27vw;
+    box-sizing: border-box;
+}
+div.before_after_txtbox{
+    width: 91.11vw;
+    height: 110px;
+    padding: 20px 0px;
+}
+.before_after_sub{
+    font: 400 10px 'Pretendard';    
+    margin-bottom: 2.78vw;
+}
+.before_after_title{
+    font: 600 20px 'Pretendard'; 
+    margin-bottom: 6vw;
+}
+.before_after_title span{ 
+    color: #1E2A78;
+}
+.before_after_swiper{
+    width: 91.11vw;
+    min-height: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.before_after_swiper .swiper-slide{
+    width: 100%;
+    min-height: 150px;
+}
+.before_after_item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2px;
+}
+.before{
+    width: 50%;
+    background-color: #B7B9C3;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.after{
+    width: 50%;
+    background-color: #1E2A78;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.before_after img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.before_after p{
+    font: 400 14px 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    padding-top: 4vw;
+}
+.before-after-swiper-pagination{
+    width: 100%;
+    height: 100%;               
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+.before-after-swiper-pagination .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    background-color: #D1D5DB;
+    opacity: 1;
+    transition: width 0.3s ease;
+}
+.before-after-swiper-pagination .swiper-pagination-bullet-active{
+    width: 30px;
+    height: 8px;
+    background-color: #1E2A78;
+    border-radius: 4px;
+}
+
+/* 제작환경 */
+section#interior{
+    width: 100vw;
+    height: 47.77vw;
+    background: url('/film_dental_lap/mobile/images/interior_back.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4.27vw;
+    box-sizing: border-box;
+}
+div.interior_txtbox{
+    width: 50%;
+    height: 140px;
+}
+.interior_sub{
+    font: 400 10px 'Pretendard';    
+    color: #ffffff;
+    margin-bottom: 2.78vw;
+}
+.interior_title{
+    font: 600 20px 'Pretendard'; 
+    color: #ffffff;
+    margin-bottom: 6vw;
+}
+.interior_title span{ 
+    color: #1BA4FF;
+}
+div.interior_img{
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+.interior_img img{
+    width: 100%;
+    height: auto;
+}
+
+/* 연락정보영역 */
+section#contact{
+    width: 100vw;
+    height: 55.55vw;
+    background-color: #1E2A78;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4.27vw;
+    padding: 0px 4.27vw;
+    box-sizing: border-box;
+}
+div.map{
+    width: 50%;
+    height: 100%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div.map img{
+    width: 100%;
+    height: auto;
+}
+.contact_txtbox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact_adress{
+    font: 400 14px 'Pretendard';
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.contact_phone{
+    font: 500 20px 'Pretendard';
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.contact_sns{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact_sns a{
+    width: 25%;
+    height: auto;
+}
+.contact_sns a img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (orientation: landscape) {
+    section#about_us{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.about_us_txtbox{
+        width: 40vw;
+    }
+    .about_us_title, .portfolio_title, .results_title, .tech_text, .special_case_title, .before_after_sub, .interior_sub{
+        margin-bottom: 1vw;
+    }
+    .about_us_text, .portfolio_text, .before_after_title, .interior_title{
+        margin-bottom: 3vw;
+    }
+    .about_us_img{
+        width: 45vw;
+        height: 25vw;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        background-size: contain;
+    }
+    section#portfolio{
+        width: 100vw;
+        margin-top: 0;
+    }
+    div.portfolio_txtbox{
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    ul.portfolio_item_list{
+        width: 100%;
+        height: 100%;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .portfolio_item p{
+        font: 400 18px 'Pretendard';
+    }
+    .card_text{
+        font: 400 16px 'Pretendard';
+        margin-bottom: 2vw;
+    }
+    .card_title, .noritake_card_text p{
+        font: 600 16px 'Pretendard';
+    }
+    .grid_item{
+        padding: 30px 30px;
+        box-sizing: border-box;
+    }
+    section#tech_wrap{
+        height: 68vw;
+    }
+    div.tech_txtbox{
+        margin-bottom: 5vw;
+    }
+    .cert_item img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .cert_item p{
+        font: 400 16px 'Pretendard';
+    }
+    section#before_after_container{
+        padding: 4vw 4.27vw;
+        box-sizing: border-box;
+    }
+    section#interior{
+        height: 30vw;
+    }
+    section#contact{
+        height: 40vw;
+    }
+    div.map{
+        width: 50%;
+    }
+    div.map img{
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+    }
+    .contact_adress{
+        font: 400 20px 'Pretendard';
+        color: #ffffff;
+        margin-bottom: 10px;    
+    }
+    .contact_phone{
+        font: 500 30px 'Pretendard';
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    .contact_sns{
+        width: 80%;
+        gap: 10px;
+    }
+}

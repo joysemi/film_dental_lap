@@ -1,0 +1,815 @@
+ /* 비쥬얼영역시작 */
+div#visual_wrap{
+    width: 100%;
+    height: 870px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-top: 134px;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.visual_video{
+    width: 96%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+video#visualVideo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    object-position: center;
+}
+.visual_des{
+    width: 80%;
+    font: bold 36px/52px 'Pretendard';
+    color: white;
+    letter-spacing: -0.5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 371px;
+    left: 9.2%; /*171px;*/
+}
+.visual_title{
+    width: 80%;
+    font: bold 7.5em 'Montserrat';
+    color: white;
+    letter-spacing: -0.5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 483px;
+    left: 9.2%;
+}
+.visual_title span{
+    color: #1E2A78;
+}
+
+/* 바로가기메뉴 */
+div#quick_menu{
+    width: 100px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top:70vh;
+    right: 3%;
+    z-index: 10;
+}
+.price_icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    background: #1B9AEF url('/film_dental_lap/images/film_icon.png') no-repeat center 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.top_icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    background: #ffffff url('/film_dental_lap/images/top_icon.png') no-repeat center 20px;
+    color: #000000;
+    cursor: pointer;
+}
+.quick_menu_text{
+    font: 500 16px/24px 'Pretendard';
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 0px;
+}
+/* 비쥬얼영역끝 */
+
+/* 컨텐츠영역시작 */
+div#contents_wrap{
+    width:100%;
+    min-height: 800px;
+}
+/* 기공소 소개 */
+div#about_us_wrap{
+    width: 100%;
+    height: 672px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 144px 0px;
+    padding: 0 2%;     
+    box-sizing: border-box;
+}
+section#about_us{
+    width: 100%;
+    max-width: 1460px;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+}
+.about_us_txtbox{
+    width: 61.64%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #EEEAE2;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.3s ease-out;
+}
+h3.about_us_title{
+    font: bold 36px/40px 'Pretendard';
+    position: absolute;
+    left: 12%;
+    top: 144px;
+}
+p.about_us_des{
+    width: 58.44%;
+    height: auto;
+    font: normal 1em/1.75em 'Pretendard';
+    color: #333333;
+    text-align: justify;
+    position: absolute;
+    left: 12%;
+    top: 226px;
+}
+button.btn_view_more{
+    width: 183px;
+    height: 56px;
+    border: solid 1px #1B9AEF;
+    border-radius: 28px;
+    background: none;
+    font: 500 16px/24px 'Pretendard';
+    color: #1B9AEF;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn_about_us{
+    position: absolute;
+    left: 12%;
+    bottom: 150px;
+}
+.btn_view_more:hover{
+    background-color: #1B9AEF;
+    color: #ffffff;
+}
+div.about_us_img{
+    width: 50%;
+    height: 508px;
+    background: url('/film_dental_lap/images/about_us_img.png') no-repeat;
+    position: absolute;
+    top: 82px;
+    right: 0px;
+    background-size: contain;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s ease-out;
+} 
+/* 포트폴리오 */
+div#portfolio_wrap{
+    width: 100%;
+    height: 800px;
+    background-color: #1E2A78;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 0px;   
+}
+section#portfolio{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+section#portfolio::after{
+    content: "FILM's special skill";
+    width: 100%;
+    font: bold 11.25em 'Montserrat';
+    text-align: center;
+    color: rgba(255, 255, 255, 0.05);
+    letter-spacing: -0.5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+div.portfolio_txtbox{
+    width: 100%;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14.91vh;
+    margin-bottom: 7.59vh;
+}
+h3.portfolio_title{
+    font: bold 36px/40px 'Pretendard';
+    color: white;
+}
+p.portfolio_des{
+    font: normal 16px/28px 'Pretendard';
+    color: white;
+}
+div.portfolio_item_box{
+    width: 100%;
+    height: 37.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul.portfolio_item_list{
+    width: 100%;
+    height: 100%;
+    margin: 0px 75px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+}
+ul.portfolio_item_list li{
+    width: 100%; /*270px*/
+    height: 100%;
+    border-radius: 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.3s ease-out;
+}
+.item_img img{
+    width: 100%;
+    height: auto;
+}
+.item_title{
+    font: 500 1.875em/1.33em 'Pretendard';
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button.btn_portfolio{
+    position: absolute;
+    left: 50%;
+    margin-left: -91.5px;
+    bottom: 0px;
+}
+
+/* 기공소 강점 */
+div#results_wrap{
+    width: 100%;
+    height: 876px;
+    margin: 144px 0px;
+    padding: 0 2%;     
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+section#results_section{
+    width: 100%;
+    max-width: 1460px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+div.results_txtbox{
+    width: 100%;
+    height: 96px;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+h3.results_title{
+    font: bold 36px/40px 'Pretendard';
+}
+.results_title span{
+    color: #1E2A78;
+}
+p.results_des{
+    font: normal 16px/28px 'Pretendard';
+    color: #333333;
+}
+
+/* 기공소 강점 - 카드 영역 */
+div#results_card_container{
+    width: 100%;
+    height: 716px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.small_card_box{
+    width: 67.39%; /*984px*/
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 24px;
+    justify-items: center;
+    align-items: center;
+}
+.time{
+    background: #EAECEF url('/film_dental_lap/images/time_card_icon.png') no-repeat 90% 90%;
+}
+.workflow{
+    background: #EEEAE2 url('/film_dental_lap/images/workflow_card_icon.png') no-repeat 90% 90%;
+}
+.scanedu{
+    background: #EAECEF  url('/film_dental_lap/images/scan_edu_card_icon.png') no-repeat 90% 90%;
+}
+.ability{
+    background: #EEEAE2 url('/film_dental_lap/images/ability_card_icon.png') no-repeat 90% 90%;
+}
+.small_card{
+    width: 100%;
+    height: 344px;
+    border-radius: 30px;
+}
+.small_card p{
+    font: 500 1.125em/1.5em 'Pretendard';
+    margin-top: 20%;
+    margin-left: 14%;
+}
+.small_card p:last-child{
+    font: bold 1.875em/1.33em 'Pretendard';
+    margin-top: 5.4%;
+}
+div.column_card_box{
+    width: 28.97%;
+    height: 100%;
+    border-radius: 30px;
+    background: #1E2A78 url('/film_dental_lap/images/column_card_box_img.png') no-repeat center 70%;
+}
+.column_card_box p{
+    font: 500 1.125em/1.5em 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    margin-top: 500px;
+}
+.column_card_box p:last-child{
+    font: bold 1.875em/1.33em 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4.72%;
+} 
+
+/* 인증서&특허증 리스트 */
+div#tech_wrap{
+    width: 100%;
+    height: 869px;
+    background-color: #0F1E34;
+}
+section#tech_section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+div#tech_left_img{
+    width: 50%; 
+    height: 100%;
+    background: url('/film_dental_lap/images/tech_background.png') no-repeat;
+}
+div#tech_right{
+    width: 810px;
+    height: 633px;
+    padding: 118px 0px;
+    position: absolute;
+    top: 0px;
+    right: 11.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tech_txtbox{
+    width: 100%;
+}
+.tech_sub{
+    font: 500 1.125em 'Pretendard';
+    color: #ffffff;
+    margin-bottom: 28px;
+}
+.tech_title{
+    font: 600 3.75em/1.23em 'Pretendard';
+    letter-spacing: -5px;
+    color: #ffffff;
+}
+.tech_title span{
+    color: #1BA4FF;
+}
+.cert_list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cert_item{
+    width: 230px;
+    height: 346px;
+}
+.cert_item img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 28px;
+}
+.cert_item p{
+    font: normal 16px/28px 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+}
+div#tech_logo{
+    width: 184px;
+    height: 50px;
+    background: url('/film_dental_lap/images/logo_film_detal.svg') no-repeat;
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+}
+
+/* 스페셜 임상사례 */
+div#special_case_wrap{
+    width: 100%;
+    min-height: 1270px;
+    margin: 144px 0px;
+    padding: 0 2%;     
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+section#special_case{
+    width: 100%;
+    max-width: 1460px;
+    height: 100%;
+    box-sizing: border-box;
+}
+div.special_case_txtbox{
+    width: 100%;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+h3.special_case_title{
+    font: bold 36px/40px 'Pretendard';
+    text-align: center;
+}
+.special_case_title span{
+    color: #1E2A78;
+}
+p.special_case_des{
+    font: normal 16px/28px 'Pretendard';
+    color: #333333;
+    text-align: center;
+}
+div#special_case_list_box{
+    width: 100%;
+    height: 37.79%;
+    margin-bottom: 70px;
+}
+ul.special_case_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;     
+}
+.special_case_item{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #F3F4F6;
+}
+.special_case_item a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px; 
+}
+.special_case_item img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+}
+.special_case_item h4{
+    font: 500 16px/24px 'Pretendard';
+    text-align: center;
+}
+.special_case_item p{
+    font: normal 15px/24px 'Pretendard';
+    color:#333333;
+    text-align: center;
+    padding-bottom: 26px; 
+}
+/* 스페셜 임상사례 - 전후사진 */
+div#before_after_container{
+    width: 100%;
+    min-height: 460px;
+    background-color: #EEEAE2;
+    border-radius: 30px;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+div.before_after_txtbox{
+    width: 40%;
+    height: 192px;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+}
+.before_after_sub{
+    font: 500 1.125em 'Pretendard';
+    margin-bottom: 16px;
+}
+.before_after_title{
+    font: bold 2.25em/1.44em 'Pretendard';
+    margin-bottom: 10%;
+}
+.before_after_title span{
+    color: #1E2A78;
+}
+.before_after_slide{
+    width: 50%;
+    height: 320px;
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.item_before_after{
+    width: 48%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.item_before_after img{
+    width: 100%;
+    height: auto;
+}
+.label{
+    width: 100%;
+    height: 64px;
+    font: 500 1.125em 'Pretendard';
+    color: #ffffff;
+    text-align: center;
+    line-height: 64px;
+}
+.before{
+    border-radius: 0px 0px 0px 15px;
+    background-color: #B7B9C3;
+}
+.after{
+    border-radius: 0px 0px 15px 0px;
+    background-color: #1E2A78;
+}
+div.before_after_info{
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#caseTitle{
+    font: 400 18px/28px 'Pretendard';
+}
+#caseTitle span{
+    font: 500 18px/28px 'Pretendard';
+    color: #1E2A78;
+}
+div.btn_before_after{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.slide_counter{
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    border: solid 2px #CFCDC9;
+    margin-right: 10px;
+    font: 500 16px/30px 'Pretendard';
+    color: #333333;
+    text-align: center;
+}
+.btn_before_after_prev{
+    width: 30px;
+    height: 30px;
+    background: url('/film_dental_lap/images/btn_prev_30.png') no-repeat center;
+    text-indent: -9999px;
+    border: none;
+    background-size: contain;
+    cursor: pointer;
+}
+.btn_before_after_next{
+    width: 30px;
+    height: 30px;
+    background: url('/film_dental_lap/images/btn_next_30.png') no-repeat center;
+    text-indent: -9999px;
+    border: none;
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* 인테리어 이미지 */
+div#interior_wrap{
+    width: 100%;
+    height: 634px;
+}
+section#interior{
+    width: 100%;
+    height: 100%;
+    background: url('/film_dental_lap/images/interior_img.png') no-repeat center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4%;
+}
+.interior_txt{
+    width: 15.625%;
+    height: 270px;
+    margin-left: 5%;
+}
+.interior_sub{
+    font: 500 1.125em 'Pretendard';
+    margin-bottom: 16px;
+    color: white;
+}
+.interior_title{
+    font: bold 2.25em/1.44em 'Pretendard';
+    margin-bottom: 55px;
+    color: white;
+}
+.interior_title span{
+    color: #1BA4FF;
+}
+button.interior_btn{
+    width: 183px;
+    height: 56px;
+    background: url('/film_dental_lap/images/viewmore_btn.png') no-repeat;
+    text-indent: -9999px;
+    border: none;
+    background-size: contain;
+}
+.interior_swiper{
+    width: 74.27%;
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.interior_slide_container .swiper-wrapper{
+    width: auto;
+    max-width: none;
+}
+.interior_slide_list{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.interior_slide_container .swiper-slide{
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.interior_slide_container .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.swiper-button-prev{
+    width: 48px;
+    height: 48px;
+    background: url('/film_dental_lap/images/interior_prev_btn.png') no-repeat center;
+    text-indent: -9999px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    left: 0px;
+    cursor: pointer;
+}
+.swiper-button-next{
+    width: 48px;
+    height: 48px;
+    background: url('/film_dental_lap/images/interior_next_btn.png') no-repeat center;
+    text-indent: -9999px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    right: 0px;
+    cursor: pointer;
+}   
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    display: none;
+}
+
+/* 컨텐츠영역끝 */
+
+/* 반응형 */
+@media screen and (max-width:1240px){
+    div#visual_wrap, div#about_us_wrap, div#portfolio_wrap, div#results_wrap, div#special_case_wrap, div#interior_wrap{
+        font-size: 14px;
+    }
+    ul.portfolio_item_list{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    ul.portfolio_item_list li{
+        padding: 4% 4%;
+        box-sizing: border-box;
+    }
+    ul.portfolio_item_list li p:nth-child(2){
+        margin-top: -10px;
+    }
+    div.portfolio_txtbox{
+        margin-top: 12vh; 
+        margin-bottom: 6vh;
+    }
+    .special_case_item p{
+        padding: 0% 4%;
+        box-sizing: border-box;
+    }
+    .special_case_item{
+        padding-bottom: 8%;
+        box-sizing: border-box;
+    }
+    .interior_swiper{
+        width: 64.27%;
+    }
+}
+
+@media screen and (max-width:980px){
+    div#visual_wrap, div#portfolio_wrap, div#results_wrap, div#special_case_wrap, div#interior_wrap{
+        font-size: 12px;
+    }
+    ul.portfolio_item_list li{
+        padding: 8% 8%;
+        box-sizing: border-box;
+    }
+    #small_card_box p{
+        margin-top: 28%;
+        margin-left: 6%;
+    }
+    div#tech_right{
+        width: 82.65%;
+        font-size: 14px;
+    }
+    .cert_item{
+        width: 28%;
+    }
+    .special_case_item h4{
+        padding: 0 3%;
+        box-sizing: border-box; 
+    }
+    .interior_swiper{
+        width: 54.27%;
+    }
+}
