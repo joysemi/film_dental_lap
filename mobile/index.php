@@ -272,16 +272,16 @@
                 <p class="contact_phone">010.1346.2288</p>
                 <div class="contact_sns">
                     <a href="#;">
-                        <img src="/film_dental_lap/mobile/images/kakao.png" alt="KakaoTalk">
+                        <img src="/film_dental_lap/images/kakao.png" alt="KakaoTalk">
                     </a>
                     <a href="#;">
-                        <img src="/film_dental_lap/mobile/images/insta.png" alt="Instagram">
+                        <img src="/film_dental_lap/images/insta.png" alt="Instagram">
                     </a>
                     <a href="#;">   
-                        <img src="/film_dental_lap/mobile/images/youtube.png" alt="YouTube">
+                        <img src="/film_dental_lap/images/youtube.png" alt="YouTube">
                     </a>
                     <a href="#;">
-                        <img src="/film_dental_lap/mobile/images/blog.png" alt="Blog">
+                        <img src="/film_dental_lap/images/blog.png" alt="Blog">
                     </a>
                 </div>
             </div>
