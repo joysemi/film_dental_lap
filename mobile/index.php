@@ -12,7 +12,7 @@
         <section id="visual">
             <h2 class="hidden">메인비쥬얼영역</h2>
             <div class="visual_video">
-                <video id="visualVideo" preload="auto" autoplay muted loop>
+                <video id="visualVideo" playsinline webkit-playsinline preload="auto" autoplay muted loop>
                     <source src="/film_dental_lap/mobile/images/mobile_video.mp4" type="video/mp4">
                 </video>
             </div>

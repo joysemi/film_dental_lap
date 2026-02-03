@@ -5,18 +5,18 @@ section#visual{
     position: relative;
     top: 0px;
     left: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    overflow: hidden;
 }
 .visual_video{
-    width: 100vw;
-    height: 100%;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
 }
 #visualVideo{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: translateZ(0); /* Safari GPU 렌더링 강제 */
 }
 .visual_txtbox{
     width: 82.5vw;
