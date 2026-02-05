@@ -142,57 +142,6 @@ ul.submenu_list>li:hover>a{
 }
 /* 상단영역끝 */
 
-/* 하단영역시작 */
-div#footer_wrap::before{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: rgba(245,245,245,0.3);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-div#footer_wrap{
-    width: 100%;
-    height: 498px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    background-color: #1E2A78;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-footer#footer_section{
-    width: 100%;
-    max-width: 1416px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 2%;
-    box-sizing: border-box;
-}
-.footer_logo{
-    margin-left: -12px;
-    margin-bottom: 30px;
-}
-.footer_logo img{
-    width: 230px;
-    height: auto;
-}
-.footer_info{
-    font: 400 1em/1.6875em 'Pretendard';
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-.footer_gray{
-    font: 400 1em/1.6875em 'Pretendard';
-    color: #7A7A7A;
-}
-/* 하단영역끝 */
-
 /* 연락정보영역 */
 section#contact{
     width: 100%;
@@ -276,10 +225,62 @@ div.map_container{
     height: auto;
     display: block;
 }
+/* 연락정보영역끝 */
+
+/* 하단영역시작 */
+div#footer_wrap::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: rgba(245,245,245,0.3);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+div#footer_wrap{
+    width: 100%;
+    height: 498px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #1E2A78;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+footer#footer_section{
+    width: 100%;
+    max-width: 1416px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 2%;
+    box-sizing: border-box;
+}
+.footer_logo{
+    margin-left: -12px;
+    margin-bottom: 30px;
+}
+.footer_logo img{
+    width: 230px;
+    height: auto;
+}
+.footer_info{
+    font: 400 1em/1.6875em 'Pretendard';
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.footer_gray{
+    font: 400 1em/1.6875em 'Pretendard';
+    color: #7A7A7A;
+}
+/* 하단영역끝 */
 
 /* 반응형 */
 @media screen and (max-width:1240px){
-    div#contact_wrap{
+    section#contact{
         height: 62vw;
         font-size: 12px;
     }
@@ -296,7 +297,7 @@ div.map_container{
         width: 60%;
         font-size: 14px;
     }
-    div#contact_wrap{
+    section#contact{
         height: 78vw;
         font-size: 10px;
     }
