@@ -59,7 +59,7 @@ section#about_us{
 }
 div.about_us_txtbox{
     width: 91.11vw;
-    height: 122px;
+    min-height: 122px;
 }
 .about_us_title{
     font: 600 20px 'Pretendard'; 
@@ -76,7 +76,8 @@ button.btn_view_more{
     background: url('/film_dental_lap/mobile/images/btn_view_more.png') no-repeat center;
     text-indent: -9999px;
     border: none;
-    transition: background-image 0.3s ease;
+    transition: all 0.1s ease;
+    margin-bottom: 6vw;
 }
 .btn_view_more:hover{
     background: url('/film_dental_lap/mobile/images/btn_hover.png') no-repeat center;
@@ -108,7 +109,7 @@ section#portfolio{
 }
 div.portfolio_txtbox{
     width: 91.11vw;
-    height: 110px;
+    min-height: 110px;
     padding: 20px 0px;
 }
 .portfolio_title{
@@ -137,6 +138,7 @@ ul.portfolio_item_list{
     justify-items: center;
     align-items: center;
     grid-gap: 10px;
+    padding-top: 4vw;
 }
 .portfolio_item{
     width: 100%;
@@ -392,7 +394,7 @@ div.special_case_txtbox{
 /* 스페셜 임상사례 - 비포에프터 */
 section#before_after_container{
     width: 100vw;
-    min-height: 380px;
+    min-height: 400px;
     background-color: #EEEAE2;
     display: flex;
     flex-direction: column;
@@ -403,7 +405,7 @@ section#before_after_container{
 }
 div.before_after_txtbox{
     width: 91.11vw;
-    height: 110px;
+    min-height: 110px;
     padding: 20px 0px;
 }
 .before_after_sub{
@@ -430,6 +432,8 @@ div.before_after_txtbox{
 .before_after_swiper .swiper-slide{
     width: 100%;
     min-height: 150px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .before_after_item{
     width: 100%;
@@ -506,7 +510,7 @@ section#interior{
 }
 div.interior_txtbox{
     width: 50%;
-    height: 140px;
+    min-height: 140px;
 }
 .interior_sub{
     font: 400 10px 'Pretendard';    
@@ -577,11 +581,12 @@ div.map img{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 8px;
 }
 .contact_sns a{
-    width: 25%;
+    width: 40px;
     height: auto;
 }
 .contact_sns a img{

@@ -254,6 +254,13 @@ ul.portfolio_item_list li{
     transform: translateY(30px);
     transition: all 0.3s ease-out;
 }
+.item_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
 .item_img img{
     width: 100%;
     height: auto;
@@ -766,8 +773,20 @@ button.interior_btn{
         padding: 4% 4%;
         box-sizing: border-box;
     }
+    
     ul.portfolio_item_list li p:nth-child(2){
         margin-top: -10px;
+    }
+    .item_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .item_img img{
+        width: 80%;
+        height: auto;
+        object-fit: contain;
     }
     div.portfolio_txtbox{
         margin-top: 12vh; 
@@ -786,6 +805,36 @@ button.interior_btn{
     }
 }
 
+@media screen and (max-width: 1024px) {
+    div#special_case_wrap{
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+    div#special_case_list_box{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    ul.special_case_list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: auto;
+        grid-gap: 20px;
+    }
+    .special_case_item{
+        min-height: 320px;
+        height: auto;
+        padding-bottom: 8%;
+        box-sizing: border-box;
+    }
+    .special_case_item p{
+        padding: 0% 4%;
+        box-sizing: border-box;
+    }
+    div#before_after_container{
+        margin-top: 40px;
+    }
+}
+
 @media screen and (max-width:980px){
     div#visual_wrap, div#portfolio_wrap, div#results_wrap, div#special_case_wrap, div#interior_wrap{
         font-size: 12px;
@@ -793,6 +842,16 @@ button.interior_btn{
     ul.portfolio_item_list li{
         padding: 8% 8%;
         box-sizing: border-box;
+    }
+    .item_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item_img img{
+        width: 60%;
+        height: auto;
+        object-fit: contain;
     }
     #small_card_box p{
         margin-top: 28%;
